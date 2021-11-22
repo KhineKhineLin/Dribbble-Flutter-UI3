@@ -126,6 +126,118 @@ class BoardingTicketPage extends StatelessWidget {
                                 ],
                               )
                             ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 32),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Flight',
+                                      style: TextStyle(fontSize: 12),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 4),
+                                      child: Text('Y4 858'),
+                                    )
+                                  ],
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Seat',
+                                      style: TextStyle(fontSize: 12),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 4),
+                                      child: Text('8D'),
+                                    )
+                                  ],
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Class',
+                                      style: TextStyle(fontSize: 12),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 4),
+                                      child: Text('Business'),
+                                    )
+                                  ],
+                                ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'SEQ#',
+                                      style: TextStyle(fontSize: 12),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 4),
+                                      child: Text('81'),
+                                    )
+                                  ],
+                                ),
+                                SizedBox(
+                                  width: 16,
+                                )
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 32),
+                            child: Row(
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Flight Date',
+                                      style: TextStyle(fontSize: 12),
+                                    ),
+                                    Text('April 04 2021')
+                                  ],
+                                ),
+                                Spacer(),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Boarding Time',
+                                      style: TextStyle(fontSize: 12),
+                                    ),
+                                    Text('18:26 PM')
+                                  ],
+                                ),
+                                Spacer()
+                              ],
+                            ),
+                          ),
+                          SizedBox(
+                            height: 14,
+                          ),
+                          Divider(),
+                          SizedBox(
+                            height: 84,
+                            child: Row(
+                              children: [
+                                Expanded(child: Container()),
+                                Expanded(
+                                    child: Container(
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                          image: NetworkImage(
+                                              'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/220px-QR_code_for_mobile_English_Wikipedia.svg.png'),
+                                          fit: BoxFit.fitHeight)),
+                                ))
+                              ],
+                            ),
                           )
                         ],
                       ),
